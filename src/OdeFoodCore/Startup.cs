@@ -45,6 +45,11 @@ namespace OdeFoodCore
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseWelcomePage(new WelcomePageOptions
+            {
+                Path = "/welcome"
+            });
+
             app.Run(async (context) =>
             {
                 //var message = Configuration["Greeting"];
